@@ -1,0 +1,17 @@
+{
+  "name": "electron-routex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "electron": "^9.1.0",
+    "routex": "github:barelyhuman/routex"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
