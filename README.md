@@ -2,7 +2,9 @@
     Electron Routex
 </h1>
 <p align="center">
-An attempt to get routex to work as a side worker with Electron to have a simpler client server approach in electron apps instead of an ipc arch
+An attempt to get 
+<a href="https://github.com/barelyhuman/routex">routex</a>
+ to work as a side worker with Electron to have a simpler client server approach in electron apps instead of an ipc arch
 </p>
 
 
