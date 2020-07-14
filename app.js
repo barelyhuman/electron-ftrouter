@@ -1,12 +1,14 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path');
 const {spawn} = require('child_process');
+const findFreePorts = require('find-free-ports');
 
 
 let routexProcess;
 
-function createRoutexProcess(){
-    const process = spawn('npx',['routex','--dir', '/server/routes']);
+function createRoutexProcess(port){
+  
+    const process = spawn('npx',['routex','--dir', '/server/routes','--port',port]);
 
 
         process.stdout.on('data',(data)=>{
@@ -21,9 +23,9 @@ function createRoutexProcess(){
     return process;
 }
 
-function createWindow () {
-  // Create the browser window.
-  routexProcess = createRoutexProcess();
+async function createWindow () {
+  const port = await findFreePorts(1)
+  routexProcess = createRoutexProcess(port);
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -32,7 +34,9 @@ function createWindow () {
     }
   })
 
-  win.loadFile(path.join('client','index.html'));
+  win.loadFile(path.join('client','index.html'),{query:{
+    port:port
+  }});
 }
 
 

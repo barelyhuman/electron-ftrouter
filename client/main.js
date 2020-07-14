@@ -1,6 +1,11 @@
 (function(){
 
-    const APIURL = "http://localhost:3000/api"
+    const querystring = require('querystring');
+    let query = querystring.parse(global.location.search);
+    let port = JSON.parse(query['?port'])
+
+
+    const APIURL = `http://localhost:${port}/api`
 
     fetch(APIURL+'/status')
     .then(r=>r.json())
