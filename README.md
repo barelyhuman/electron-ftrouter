@@ -19,15 +19,15 @@ Transmission uses this (kind off) and If I could get something similar working w
 
 ## TODO
 
-- [ ] Figure out port automatically (harcoded to 3000 right now)
 - [ ] API requests from client to worker in bundled electron app 
+- [X] Figure out port automatically (harcoded to 3000 right now)
 - [x] Worker alongside Electron to launch routex
 - [x] End Worker when client closes
 - [x] API requests from client to worker in unbundled electron app 
 
 ## Current Limitations
 
-- The routex instances is always started on port 3000 which is not ideal since the app would collide with other instance and that's the next thing i'll be working on.
+- Haven't tested the whole flow with a bundled version of Electron yet.
 
 
 
