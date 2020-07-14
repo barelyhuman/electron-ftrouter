@@ -34,7 +34,7 @@ async function createWindow () {
     }
   })
 
-  win.loadFile(path.join('client','index.html'),{query:{
+  win.loadFile(path.join('client','dist','index.html'),{query:{
     port:port
   }});
 }
