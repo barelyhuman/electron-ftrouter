@@ -1,9 +1,9 @@
 <h1 align="center">
-    Electron Routex
+    Electron ftrouter
 </h1>
 <p align="center">
 An attempt to get 
-<a href="https://github.com/barelyhuman/routex">routex</a>
+<a href="https://github.com/barelyhuman/ftrouter">ftrouter</a>
  to work as a side worker with Electron to have a simpler client server approach in electron apps instead of an ipc arch
 </p>
 
@@ -14,14 +14,14 @@ While I think electron's IPC is really well implemented, its a pain for a develo
 
 I wanted to go with JSON RPC approach where a daemon listens for general network POST requests and the client can perform system level actions without actually having access to it. 
 
-Transmission uses this (kind off) and If I could get something similar working with [routex](https://github.com/barelyhuman/routex) then the user has a pretty easy way to write the server side of the electron app that's launched on side of the actual client view and the client developer can talk to the server by making simple `fetch` calls.
+Transmission uses this (kind off) and If I could get something similar working with [ftrouter](https://github.com/barelyhuman/ftrouter) then the user has a pretty easy way to write the server side of the electron app that's launched on side of the actual client view and the client developer can talk to the server by making simple `fetch` calls.
 
 
 ## TODO
 
 - [ ] API requests from client to worker in bundled electron app 
 - [X] Figure out port automatically (harcoded to 3000 right now)
-- [x] Worker alongside Electron to launch routex
+- [x] Worker alongside Electron to launch ftrouter
 - [x] End Worker when client closes
 - [x] API requests from client to worker in unbundled electron app 
 
@@ -32,6 +32,6 @@ Transmission uses this (kind off) and If I could get something similar working w
 
 ## React Implementation
 
-Switch the branch to react-version or [react-version](https://github.com/barelyhuman/electron-routex/tree/react-version)
+Switch the branch to react-version or [react-version](https://github.com/barelyhuman/electron-ftrouter/tree/react-version)
 
 
