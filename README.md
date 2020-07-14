@@ -30,4 +30,8 @@ Transmission uses this (kind off) and If I could get something similar working w
 - Haven't tested the whole flow with a bundled version of Electron yet.
 
 
+## React Implementation
+
+Switch the branch to react-version or [react-version](https://github.com/barelyhuman/electron-routex/tree/react-version)
+
 
