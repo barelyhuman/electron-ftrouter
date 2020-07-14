@@ -6,7 +6,7 @@
   "dependencies": {
     "electron": "^9.1.0",
     "find-free-ports": "^2.0.3",
-    "routex": "github:barelyhuman/routex"
+    "ftrouter": "github:barelyhuman/ftrouter"
   },
   "devDependencies": {},
   "scripts": {

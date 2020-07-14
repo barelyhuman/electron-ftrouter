@@ -8,7 +8,7 @@ let routexProcess;
 
 function createRoutexProcess(port){
   
-    const process = spawn('npx',['routex','--dir', '/server/routes','--port',port]);
+    const process = spawn('npx',['ftrouter','--dir', '/server/routes','--port',port]);
 
 
         process.stdout.on('data',(data)=>{
